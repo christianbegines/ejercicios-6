@@ -15,11 +15,8 @@ import java.util.*;
  */
 public class EjercicioFechas {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        //“Hoy es Viernes, día 15 de Enero del año 2016 y son las 13:30”.//
+        
         String diasS[] = {"domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"};
         String mesA[] = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
         Date hoy = new Date();
@@ -28,6 +25,7 @@ public class EjercicioFechas {
         String fecha,fecha2;
         Locale fEsp=new Locale( "es", "ES","Traditional_WIN");
         
+        //“Hoy es Viernes, día 15 de Enero del año 2016 y son las 13:30”.//
         System.out.print("\nHoy es ");
         System.out.print(diasS[calenG.get(Calendar.DAY_OF_WEEK) - 1]);
         System.out.print(", dia " + calenG.get(Calendar.DAY_OF_MONTH));
